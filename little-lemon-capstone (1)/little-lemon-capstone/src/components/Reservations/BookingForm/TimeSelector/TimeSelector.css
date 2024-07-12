@@ -1,0 +1,56 @@
+.time_selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 50px; */
+  font-family: "Markazi Text", serif;
+  font-size: 28px;
+  /* background-color: #495e57; */
+  color: #495e57;
+  margin-left: 15px;
+}
+
+.timeslots {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* padding: 25px; */
+}
+
+.slot_box {
+  width: 90px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: #495e57;
+  color: #edefee;
+}
+
+.slot_label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="radio"] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (max-width: 780px) {
+  .time_selector {
+    font-size: 22px;
+    /* padding: 25px; */
+  }
+
+  .timeslots {
+    gap: 0.5rem;
+  }
+
+  .slot_box {
+    width: 60px;
+  }
+}

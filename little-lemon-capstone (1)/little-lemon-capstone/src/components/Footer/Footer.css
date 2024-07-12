@@ -1,0 +1,65 @@
+.footer_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px;
+  color: #495e57;
+}
+
+.app_footer {
+  background-color: #edefee;
+}
+
+.footer_item {
+  margin-top: 50px;
+}
+
+.footer_item_title {
+  font-family: "Markazi Text", serif;
+  font-size: 34px;
+  font-weight: 850;
+}
+
+.footer_item_names {
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+
+  list-style-type: none;
+}
+
+.footer_item_names > li {
+  margin-top: 7px;
+}
+.footer_item_names > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.footer_image {
+  width: 250px;
+}
+
+@media screen and (max-width: 580px) {
+  footer {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer_item {
+    margin-top: 10;
+  }
+  .footer_item_title {
+    font-size: 28px;
+  }
+  .footer_image_box {
+    display: none;
+  }
+
+  .footer_item_names > li > a {
+    font-size: 18px;
+  }
+
+  .footer_image {
+    width: 150px;
+  }
+}

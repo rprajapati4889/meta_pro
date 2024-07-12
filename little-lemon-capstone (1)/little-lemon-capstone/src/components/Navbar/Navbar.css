@@ -1,0 +1,112 @@
+.app_nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(210, 210, 210, 0.65);
+  backdrop-filter: blur(4px);
+  --webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  z-index: 2;
+  font-family: "Markazi Text", serif;
+}
+
+.app_nav_logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app_nav_links {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.link {
+  color: #495e57;
+  text-decoration: none;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: gray;
+}
+
+.mobile_nav {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edefee;
+  margin-right: 110px;
+}
+
+.mobile_menu_icon {
+  width: 70%;
+  height: 70%;
+  color: #495e57;
+}
+.mobile_nav > div {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  padding: 1rem;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.mobile_navbar_cancel {
+  width: 35px;
+  height: 35px;
+  color: #495e57;
+}
+
+.mobile_nav > div > .link {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 900px) {
+  .mobile_nav {
+    display: none;
+  }
+  .mobile_nav > div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app_nav_links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .p-text {
+    font-size: 1.75rem;
+  }
+}

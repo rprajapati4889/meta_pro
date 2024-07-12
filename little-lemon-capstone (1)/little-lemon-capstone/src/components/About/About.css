@@ -1,0 +1,80 @@
+.about_outer_container {
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+  flex-wrap: wrap;
+}
+
+.about_detail_box {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.about_title {
+  font-size: 64px;
+  color: #f4ce14;
+  display: inline-block;
+}
+
+.about_subtitle {
+  font-size: 40px;
+  color: #495e57;
+  display: inline-block;
+}
+
+.about_description {
+  width: 80%;
+  text-align: justify;
+  font-size: 18px;
+  color: #495e57;
+  display: inline-block;
+}
+
+.about_image_box {
+  display: flex;
+  position: relative;
+  width: fit-content;
+}
+
+.about_image {
+  width: 273px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  border-radius: 10px;
+}
+
+.about_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_header_text {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+}
+
+@media screen and (max-width: 1020px) {
+  .about_image {
+    width: 150px;
+  }
+
+  .about_image_box {
+    display: block;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about_detail_box {
+    width: 80%;
+    text-align: center;
+  }
+}
